@@ -1,0 +1,1 @@
+module.exports = (n, options) => options.fn(this).repeat(n);
