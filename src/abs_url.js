@@ -1,7 +1,8 @@
 const {URL} = require('url');
-const urlBase = process.env.HBSX_APP_URL || process.env.APP_URL;
 
 module.exports = x => {
+	const urlBase = process.env.HBSX_APP_URL || process.env.APP_URL;
+
 	try {
 		return new URL(x, urlBase).href;
 	}
