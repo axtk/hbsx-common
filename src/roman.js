@@ -2,7 +2,7 @@ module.exports = x => {
     if (typeof x !== 'number')
         return '';
 
-    // http://rosettacode.org/wiki/Roman_numerals/Encode#Declarative
+    // @see https://rosettacode.org/wiki/Roman_numerals/Encode#Declarative
     return 'I'
         .repeat(x)
         .replace(/IIIII/g, 'V')
